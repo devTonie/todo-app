@@ -7,9 +7,9 @@ const RoutesWrapper: React.FC = () => (
     <Route
       path="/"
       element={<Navigate to="/todos" />}
-      errorElement={<ErrorPage />}
     />
     <Route path="/todos" element={<TodosPage />} />
+    <Route path="*" element={<ErrorPage />} />
   </Routes>
 );
 
